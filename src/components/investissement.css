@@ -1,0 +1,315 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #f2f4f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(245, 242, 242);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css */
+body {
+  background-color: #f7f5f5;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.investissement-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.card-link {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.3s;
+}
+
+.card-link.active {
+  border-color: #aaa;
+}
+
+.card-header {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #222;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  margin-left: auto;
+}
+
+.expanded-content {
+  margin-top: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.logiciels-panel {
+  background-color: #fff; /* <-- ici on met blanc */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-top: 15px;
+}
+
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tabs .active {
+  border-color: #007bff;
+  background-color: #007bff;
+  color: white;
+}
+
+.box {
+  background-color: #d9ecff;
+  border: 1px solid white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.lorem-title {
+  background-color: #0070c0; /* bleu un peu foncé */
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 0px;
+}
+
+
+.stats {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid white;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.section {
+  margin-top: 1rem;
+}
+
+.horizontal label {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  background: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.section h4 {
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+.chiffre{
+  color: #003366;
+}
+/* Style personnalisé pour les radio et checkbox cochés */
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  accent-color: #0070c0; /* Bleu foncé clair, comme ta maquette */
+}
+
+
+.investissement-box {
+  background-color: #e1effa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.investissement-box h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Boîte contenant Prix + les boutons */
+.prix-wrapper {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+}
+
+/* Champ Prix */
+.prix-input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+}
+
+/* Conteneur boutons + - */
+.adjust-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+/* Boutons + et - */
+.adjust-btn {
+  background-color: white;
+  border: 1px solid #0070c0;
+  color: #0070c0;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Valeur précédente */
+.previous-value {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Boutons de bas */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.cancel-btn,
+.confirm-btn {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #0070c0;
+  font-size: 1rem;
+}
+
+.cancel-btn {
+  background-color: white;
+  color: #0070c0;
+}
+
+.confirm-btn {
+  background-color: #0070c0;
+  color: white;
+}
+
+
+
+.double-field {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cost-block,
+.invest-block {
+  flex: 1;
+}
+
+.cost-input-wrapper {
+  background-color: #007acc;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
+.cost-input {
+  border: none;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+}
+
+.cost-input:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 0.5rem;
+}
+
+.invest-block label {
+  margin-bottom: 0.25rem;
+  display: inline-block;
+}
